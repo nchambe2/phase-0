@@ -45,4 +45,4 @@ I struggled with reading through the 'What is User Experience Design?' article. 
 
 **Site Map**
 
-![Alt Site Map](week-2/imgs/site-map.png)
+![Alt Site Map](imgs/site-map.png)
