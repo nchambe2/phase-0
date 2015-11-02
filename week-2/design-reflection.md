@@ -1,3 +1,7 @@
+**Site Map**
+
+![Alt Site Map](imgs/site-map.png)
+
 **What are the 6 Phases of Web Design?**
 
 The six phases of web design are:
@@ -42,7 +46,3 @@ User experience is how a person feels when interacting with a system. User exper
 
 **Which parts of the challenge did you find tedious?**
 I struggled with reading through the 'What is User Experience Design?' article. While it contained a lot of helpful information about user experience. It was just rather long, and it took me awhile to finish.
-
-**Site Map**
-
-![Alt Site Map](imgs/site-map.png)
