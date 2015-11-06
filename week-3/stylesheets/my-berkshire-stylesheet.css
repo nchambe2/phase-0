@@ -1,7 +1,7 @@
 /*Base Rules */
 body {
-  color: #000080  ;
-  background-color: #ffffff  ;
+  color: #000080;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -48,20 +48,17 @@ ul  {
   font-size: 70%;
 }
 
-#geico {
+.geico {
  text-align: center;
  font-size: 60%;
+ text-transform: uppercase;
 }
 
-#geico p{
-  text-transform: uppercase;
-}
-
-#comments p {
+.comments {
    font-size: 80%;
 }
 
-#comments span{
+.comments span{
   text-transform: uppercase;
 }
 
@@ -81,7 +78,50 @@ a:visited {
 }
 
 
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+When linking a external files such as a stylesheet to a HTML file it's imporatnt to know where your external file leaves, and where it lives in comparsion to your HTML file.
+So the HTML file can find it.
 
+Also, you need to remember to declare the relationship and type of the external file you are linking to.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+Chrome Devtools helped alot with playing around with positioning.
+Normally, I would go back to my css file, make a change, save it, then go back and view it in the browser.
+Being able to play with styles in the actual browser saved me time, because I could quickly see what was working and what wasn't.
+
+Getting the site to look how I wanted it to was much harder then I thought.
+At a glance the site looked super simple.
+However, styling it wasn't that easy.
+The biggest reason was that I read the ebook SMACSS(it was included in the additional resources).
+ It opened my eyes to how important it is to create resuable, easy to understand CSS.
+  Typically, I just keep trying things until it visually looks right.
+   This time I spent a lot of time thinking about how to make my css more resuable by not creating so many specific styles, and also making my css readable by determing where it would go in the file.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+I used:
+color,
+background-color,
+text-transform,
+margin,
+padding,
+font-weight,
+font-size,
+text-align,
+text-align,
+border-top
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+I included classes in my HTML. I did not include any ids in my css. All of my style rules were either element specific or could be resued by other elments.
+By trying to use as many classes as possible I was able to keep my css file relatively small, and it made me think harder about making my style rules as resuable as possible.
+If you use an id it means that you have created a style rule that is specific to only one element.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+I think my version had cleaner code, and followed better best practices.
+The actual Berkshire site did not adhere to the idea of keeping your presentation and your styles sperate. All of the styles were written inline vs. linking to an external stylesheet. None of the code was semantic. Instead, it contained alot of divs.
+
+One thing they did do better is that they declared the character encoding in the head. While I didn't.
+*/
 
 
 
