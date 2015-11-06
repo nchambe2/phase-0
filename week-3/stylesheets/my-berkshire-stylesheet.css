@@ -1,0 +1,89 @@
+/*Base Rules */
+body {
+  color: #000080  ;
+  background-color: #ffffff  ;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #800080;
+}
+
+
+/*Layout Rules */
+ header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 60%;
+}
+
+ul  {
+    height: 280px;
+}
+
+.content-list {
+    list-style-type: disc;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-position: inside;
+}
+
+/*Module Rules*/
+.captial-letter {
+  font-size: 200%;
+}
+
+.description-text {
+  font-size: 70%;
+}
+
+#geico {
+ text-align: center;
+ font-size: 60%;
+}
+
+#geico p{
+  text-transform: uppercase;
+}
+
+#comments p {
+   font-size: 80%;
+}
+
+#comments span{
+  text-transform: uppercase;
+}
+
+footer p:nth-child(2) {
+  font-size: 50%;
+}
+
+/*State Rules*/
+a:visited {
+  color: #ff0000  ;
+}
+
+/*Themes*/
+.border {
+  border-top: thin solid #000000 ;
+  margin-bottom: 2%;
+}
+
+
+
+
+
+
+
+
