@@ -6,13 +6,6 @@ body {
 
 h1 {
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -24,19 +17,27 @@ a {
  header {
   font-weight: bold;
   text-align: center;
-  font-size: 60%;
+  font-size: 80%;
+  margin-bottom: 2%;
+}
+
+h1,h2 {
+  margin: 0;
+  padding: 0;
 }
 
 ul  {
-    height: 280px;
+   display: inline-block;
 }
 
-.content-list {
-    list-style-type: disc;
+li {
+  margin-bottom: 3%;
+}
+
+.content-section {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-    list-style-position: inside;
 }
 
 /*Module Rules*/
@@ -44,8 +45,13 @@ ul  {
   font-size: 200%;
 }
 
+.secondary-header {
+  font-size: 70%;
+}
+
 .description-text {
   font-size: 70%;
+  margin-left: 3%;
 }
 
 .geico {
