@@ -1,10 +1,10 @@
-![Change the Colors] ("../imgs/change_colors.png")
-![Column] ("../imgs/column.png")
-![Row] ("../imgs/row.png")
-![Make Equidistant] ("../imgs/equidistance.png")
-![Square] ("../imgs/squares.png")
-![Footer] ("../imgs/footer.png")
-![Header] ("../imgs/header.png")
+![Change the Colors] ("imgs/change_colors.png")
+![Column] ("imgs/column.png")
+![Row] ("imgs/row.png")
+![Make Equidistant] ("imgs/equidistance.png")
+![Square] ("imgs/squares.png")
+![Footer] ("imgs/footer.png")
+![Header] ("imgs/header.png")
 
 **How can you use Chrome's DevTools inspector to help you format or position elements?**
 Using Chrome DevTools allows you to make experimentally styling to elements, and see the results of that styling immediately reflected in the browser window.
