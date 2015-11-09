@@ -1,9 +1,16 @@
+**Change the Colors**
 ![Change the Colors] (imgs/change_colors.png)
+**Column**
 ![Column] (imgs/column.png)
+**Row**
 ![Row] (imgs/row.png)
+**Make Equidistant**
 ![Make Equidistant] (imgs/equidistance.png)
+**Square**
 ![Square] (imgs/squares.png)
+**Footer**
 ![Footer] (imgs/footer.png)
+**Header**
 ![Header] "imgs/header.png)
 
 **How can you use Chrome's DevTools inspector to help you format or position elements?**
