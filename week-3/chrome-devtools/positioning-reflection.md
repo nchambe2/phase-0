@@ -11,7 +11,11 @@
 **Footer**
 ![Footer] (imgs/footer.png)
 **Header**
-![Header] "imgs/header.png)
+![Header] (imgs/header.png)
+**Sidebar**
+![Sidebar] (imgs/sidebar.png)
+**Get Creative**
+![Get Creative] (imgs/get_creative.png)
 
 **How can you use Chrome's DevTools inspector to help you format or position elements?**
 Using Chrome DevTools allows you to make experimentally styling to elements, and see the results of that styling immediately reflected in the browser window.
