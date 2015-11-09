@@ -14,13 +14,13 @@ If you want to resize elements you can use the width and height style property t
 
 **What are the differences between absolute, fixed, static, and relative positioning? Which did you find easiest to use? Which was most difficult?**
 
-*Static: The normal behavior of all elements are static.
+* Static: The normal behavior of all elements are static.
 
-*Relative: Moves the element relative to where it originally was positioned.
+* Relative: Moves the element relative to where it originally was positioned.
 
-*Fixed: The element is placed relative to the browser. So the element stays in place when scrolling occurs.
+* Fixed: The element is placed relative to the browser. So the element stays in place when scrolling occurs.
 
-*Absolute:  Places a page element relative to the nearest parent element that has relative or absolute positioning.
+* Absolute:  Places a page element relative to the nearest parent element that has relative or absolute positioning.
 
 When I first researched the different positioning properities I thought absolute would be the easiest to use, and relative positioning would be the hardest.
 
