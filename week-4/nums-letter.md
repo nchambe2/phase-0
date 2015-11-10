@@ -12,26 +12,32 @@ The difference between float and integer division is the number that is returned
 Integer division is good to use when the reminder can only be a whole number. For instance, let's say you wanted to purchase some toy blocks. You only have $9 with you. Each block cost $2 each. You would only be able to purchase 4 toy block without going
 
 **How many hours are in a year**
-* In a normal year there are 8760 hours
+*In a normal year there are 8760 hours
 
 ```ruby
 p 24 * 365
 ```
 
-* In a leap year there are 8784 hours
+*In a leap year there are 8784 hours
 
 ```ruby
 p 24 * 366
 ```
 
 **How many minutes in a decade**
-* There are 5,256,000 in a decade
+*There are 5,256,000 in a decade
 
 ```ruby
 p 60 * 24 # multiply the minutes in a hour by the minutes in a full day
 p 365 * 10 # multiply the days in one year by 10
 p 1440 * 3650 # multiply the number of total minutes in a day by the total number of days in a decade(didn't account for leap years)
 ```
+
+**4.2.1 Defining Variables**
+[Defining Variables] (https://github.com/nchambe2/phase-0/blob/master/week-4/defining-variables.rb)
+
+**4.2.2 Simple String Methods**
+[Simple String Methods]  ()
 
 **What are strings? Why and when would you use them?**
 
