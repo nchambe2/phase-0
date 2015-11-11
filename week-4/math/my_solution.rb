@@ -24,4 +24,4 @@ end
 add(10, 10)
 subtract(20, 10)
 multiply(2, 3)
-divide(10, 2)
+divide(10.0, 2.0)
