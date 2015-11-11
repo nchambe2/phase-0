@@ -23,6 +23,15 @@ bigger_better_number = favorite_number + 1
 puts 'I know you said your favorite number is ' + ' ' + favorite_number.to_s + ' , but this number: ' +
       bigger_better_number.to_s + ' is a even bigger better number.'
 
+#Define Method Solution
+#https://github.com/nchambe2/phase-0/blob/master/week-4/define-method/my_solution.rb
+
+#Return a Formatted Address Solution
+#https://github.com/nchambe2/phase-0/blob/master/week-4/address/my_solution.rb
+
+#Defining Math Methods Solution
+#https://github.com/nchambe2/phase-0/blob/master/week-4/math/my_solution.rb
+
 #How do you define a local variable?
 #In order to define a local variable you set a variable name equal to a single value. Local variable names can contain any sequence of characters, but the first letter must be lower case.
 #For example: x = "a"
@@ -39,10 +48,10 @@ puts 'I know you said your favorite number is ' + ' ' + favorite_number.to_s + '
 #Methods are resuable chunks of code that carry out specific tasks. While local variables are containers for single values that you want to hold on to for later use. While local variables don't actually do anything in of themselves you can query them in order to get information about what is stored inside of the variable. Also, methods can perform actions on local variables.
 
 #How do you run a ruby program from the command line?
-#In order to run a ruby program from the command line you have to type ruby <file_name>.rb
+#In order to run a ruby program from the command line you have to type ruby file_name.rb
 
 #How do you run an RSpec file from the command line?
-#In order to run a rspec file from the command line you have to type rspec <file_name_spec>.rb
+#In order to run a rspec file from the command line you have to type rspec file_name_spec.rb
 
 #What was confusing about this material? What made sense?
 #I don't think the material was confusing. I thought it was a great opportunity to get more practice with Ruby, and spend some time reinforcing the core concepts.
