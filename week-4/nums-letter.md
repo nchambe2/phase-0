@@ -37,7 +37,7 @@ p 1440 * 3650 # multiply the number of total minutes in a day by the total numbe
 [Defining Variables] (https://github.com/nchambe2/phase-0/blob/master/week-4/defining-variables.rb)
 
 **4.2.2 Simple String Methods**
-[Simple String Methods]  ()
+[Simple String Methods]  (https://github.com/nchambe2/phase-0/blob/master/week-4/simple-string.rb)
 
 **What are strings? Why and when would you use them?**
 
