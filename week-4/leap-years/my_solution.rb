@@ -25,13 +25,15 @@ Output: Print true IF the year provided is a leap year. Else print false IF the 
 def leap_year?(year)
   year = year.to_i
 
-  if (year % 4 == 0) && (year % 100 != 0)
+  divisible_by_four = (year % 4 == 0)
+  divisible_by_four_hundred = (year % 400 == 0)
+  not_divisible_by_one_hundred = (year % 100 != 0)
+
+  if (divisible_by_four) && (not_divisible_by_one_hundred)
     return true
-  elsif (year % 400 == 0)
+  elsif (divisible_by_four_hundred)
     return true
-  elsif (year % 4 == 0 && year % 100 == 0) && (year % 400 != 0)
-    return false
-  else (year % 4 != 0)
+  else
     return false
   end
 
