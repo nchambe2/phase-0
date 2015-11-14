@@ -41,6 +41,8 @@ OUTPUT: Return the numbers in a collection. Should be ordered by the lower bound
 
 # Your Solution Below
 
+=begin
+
 def count_between(list_of_integers, lower_bound, upper_bound)
 
   if list_of_integers.length == 0
@@ -60,4 +62,19 @@ def count_between(list_of_integers, lower_bound, upper_bound)
 
     return count_integer_array.length
 
+end
+=end
+
+def count_between(list_of_integers, lower_bound, upper_bound)
+    if (list_of_integers.length == 0) || (upper_bound < lower_bound )
+        return 0
+    else
+        count_integer_array = []
+        list_of_integers.each do |integer|
+            next if integer < lower_bound
+            next if integer > upper_bound
+            count_integer_array << integer
+        end
+    end
+      return count_integer_array.length
 end
