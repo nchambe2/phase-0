@@ -39,7 +39,7 @@ OUTPUT: Return the numbers in a collection. Should be ordered by the lower bound
 
 =end
 
-# Your Solution Below
+# Original Solution Below
 
 =begin
 
@@ -63,7 +63,6 @@ def count_between(list_of_integers, lower_bound, upper_bound)
     return count_integer_array.length
 
 end
-=end
 
 def count_between(list_of_integers, lower_bound, upper_bound)
     if (list_of_integers.length == 0) || (upper_bound < lower_bound )
@@ -77,4 +76,10 @@ def count_between(list_of_integers, lower_bound, upper_bound)
         end
     end
       return count_integer_array.length
+end
+=end
+
+def count_between(list_of_integers, lower_bound, upper_bound)
+  filtered_array =  list_of_integers.select { |integer| integer >= lower_bound && integer <= upper_bound }
+  return filtered_array.length
 end
