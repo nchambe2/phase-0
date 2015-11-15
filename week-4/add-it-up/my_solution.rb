@@ -1,25 +1,23 @@
 # Add it up!
 
-# Complete each step below according to the challenge directions and
-# include it in this file. Also make sure everything that isn't code
-# is commented in the file.
+=begin
+INPUT: Take a collection of numbers
 
-# I worked on this challenge [by myself, with: ].
+Create a container object that holds the sum of all the numbers
 
-# 0. total Pseudocode
-# make sure all pseudocode is commented out!
+FOR each number in the collection THEN
+  add the current number to the sum
+END FOR
 
-# Input: Were are taking in an array.
+OUTPUT: Return the sum of all the numbers inside of that collection
+=end
 
-# Output: The sum of all the numbers inside of the array.
+# I worked on this challenge [with: David Diaz].
 
-# Steps to solve the problem.
-# Create a method
-# Method should take an array of numbers.
-# Iterate through array adding numbers
-# Return the sum of those numbers
 
 # 1. total initial solution
+
+=begin
 def total(arrayofnum)
  counter = 0
  sum = 0
@@ -31,23 +29,41 @@ def total(arrayofnum)
    end
    p sum
 end
-
+=end
 
 # 3. total refactored solution
+
+def total(arrayofnum)
+
+  sum = 0
+
+  arrayofnum.each do |number|
+    sum = number + sum
+  end
+
+  return sum
+
+end
+
+
 
 
 # 4. sentence_maker pseudocode
 # make sure all pseudocode is commented out!
-# Input: an array of strings
-# Output: a concatened string
+
+# Input: Obtain a collection of words
+
+
 # Steps to solve the problem.
-# create a method
-# should take a string array
-# iterater through the string array
-# return the concatened sentence
+# Create a container object called sentence that holds a empty string
+# For each word in the collection THEN
+#     add the current word to the sentence cotainer object
+# END FOR
+#
+# OUTPUT: Return a capitalized sentence ending in a period
 
 # 5. sentence_maker initial solution
-
+=begin
 def sentence_maker(array_of_strings)
   arraylength = array_of_strings.length
   counter = 0
@@ -59,5 +75,21 @@ def sentence_maker(array_of_strings)
   end
    p concatened_string.strip.capitalize + "."
 end
+=end
 
 # 6. sentence_maker refactored solution
+
+def sentence_maker(array_of_strings)
+
+
+    sentence = ""
+
+    array_of_strings.each do |word|
+
+      sentence = "#{sentence}" + " " + "#{word}"
+
+    end
+
+    return sentence.strip.capitalize + "."
+
+end

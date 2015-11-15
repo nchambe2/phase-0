@@ -1,27 +1,31 @@
 # Factorial
 
-#create a method called factorial
+=begin
+  INPUT: Obtain a integer
 
-#the method will take a argument of 0
-#then inside the method we will return 1
+  Create a container called counter that holds the value of integer - 1
+  Create a container called number that holds the value of integer
 
-#the method will take a argument of 1
-#then inside the method we will return 1
-#
-#the method will take a argument of 10
-#then the expected solution will be 3628800
-#
-#the method will take an argument of 20
-#then the expected solution will be 2432902008176640000
-#
-#the method will take an argument of 1000
-#and when divided by a 1000 the remainder should be 0
-#No floats
+  IF the number is 0 or 1 THEN
+      return 1
+  ELSE
 
-# I worked on this challenge [by myself, with: ].
+  WHILE counter >= 1 THEN
+      mulitiply the value held in the container number by the counter
+      subtract 1 from the counter
+  END WHILE
+
+  OUTPUT: Return the product of all integers from one to the the integer obtained in the input.
 
 
-# Your Solution Below
+=end
+
+# I worked on this challenge [with: David Diaz].
+
+
+# Original Solution Below
+
+=begin
 def factorial(number)
   if number == 0
    p 1
@@ -36,4 +40,20 @@ def factorial(number)
    end
   p mult
  end
+end
+=end
+
+def factorial(integer)
+  counter = integer - 1
+  number = integer
+
+  if integer == 0 || integer == 1
+    return 1
+  else
+      while counter >= 1
+         number = number * counter
+         counter -= 1
+      end
+      return number
+  end
 end
