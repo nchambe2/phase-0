@@ -56,7 +56,7 @@ I think this challenge was a really good review of Ruby Basics. Something I hadn
 
 **Exercises**
 
-[4.2.1 Defining Variables] (https://github.com/nchambe2/phase-0/blob/master/week-4/defining-variables.rb)
+[4.2.1 Defining Variables] (https://github.com/nchambe2/phase-0/blob/master/week-4/define-method/my_solution.rb)
 
 [4.2.2 Simple String Methods] (https://github.com/nchambe2/phase-0/blob/master/week-4/simple-string.rb)
 
