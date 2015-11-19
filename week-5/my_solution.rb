@@ -104,3 +104,14 @@ pad([4,5,6], 6, "string")
 
 # 4. Reflection
 
+=begin
+  Were you successful in breaking the problem down into small steps?
+Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+When you refactored, did you find any existing methods in Ruby to clean up your code?
+How readable is your solution? Did you and your pair choose descriptive variable names?
+What is the difference between destructive and non-destructive methods in your own words?
+
+
+=end
+
