@@ -93,12 +93,15 @@ The first conditional branch was to return the original array if the length of t
 The second conditional branch add one comma to numbers between 4 and 6.
 
 Finally, the last conditional branch added two commas to numbers between 7 and 8.
-I find pseudo coding helpful because it helps me determine where my failure points are. If I pseudocode first and can't solve the problem then I know I don't understand it.
+I find pseudo coding helpful because it helps me determine where my failure points are. 
+If I pseudocode first and can't solve the problem then I know I don't understand it.
 
 I initally reversed my string, iterated through the reversed string, added a comma(s), pushed the number with a comma into the array, then returned the reversed string.
 
-I used the insert method for my refactored solution. I tried to stray away from methods that were to cryptic. Instead, choosing one that decreased the length of my code, but didn't sacrifice readability.
+I used the insert method for my refactored solution. I tried to stray away from methods that were to cryptic.
+Instead, choosing one that decreased the length of my code, but didn't sacrifice readability.
 
-I do think that my code is more readable. I took out the explicit returns, shortened my conditional statements, and used a built in Ruby method to replace having to reverse my string and iterate through it to place the comma.
+I do think that my code is more readable.
+I took out the explicit returns, shortened my conditional statements, and used a built in Ruby method to replace having to reverse my string and iterate through it to place the comma.
 
 =end
