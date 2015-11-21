@@ -29,18 +29,45 @@ def mode (arrays)
 end
 =end
 
-  include Enumerable
+=begin
+
+include Enumerable
+def mode (arrays)
+  key = []
+  number = []
+  most_frequent = Hash.new(0)
+  arrays.each { |arrays| most_frequent[arrays] += 1}
+  # most_frequent.sort_by { |key, value| value }
+  p key = most_frequent.max_by{ |k,v| v}[0]
+  p number = key.to_s.split(" ")
+
+  number.each_with_index do |i, x|
+      p number[x] = i.to_i
+  end
+
+
+
+=end
+
+include Enumerable
 def mode (arrays)
   most_frequent = Hash.new(0)
-  p most_frequent.sort_by { |key, value| value }
-  arrays.each { |arrays| most_frequent[arrays] += 1}
+  arrays.each do |i|
+    most_frequent[i] += 1
+  end
+  mode_arrays =[]
+  most_frequent.each do |k,v|
+    if v ==most_frequent.values.max
+      mode_arrays << k
+end
+end
+mode_arrays.sort
 end
 
 
 
 
-
-mode(["apple", "orange", "apple"])
+#mode(["apple", "orange", "apple"])
 
 # 3. Refactored Solution
 

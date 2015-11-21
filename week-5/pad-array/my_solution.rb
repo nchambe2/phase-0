@@ -1,0 +1,111 @@
+# Pad an Array
+
+# I worked on this challenge [by myself, with: ]
+
+# I spent [] hours on this challenge.
+
+
+# Complete each step below according to the challenge directions and
+# include it in this file. Also make sure everything that isn't code
+# is commented in the file.
+
+
+
+# 0. Pseudocode
+
+# What is the input?
+
+=begin
+
+INPUT: Obtain a collection of values, the minium size the array length can be, and a optional contianer object called value which is set to a default of nil
+
+Create a empty collection object called padded array.
+Create a empty container object called pushed values
+
+If min_size of the array is less than or equal to the current array size THEN
+    return the array
+Elsif the size of the array is less than the min_size THEN
+    pushed_values =  min_size - array.length
+    pushed_values.times {pushed_values << value}
+End IF
+
+    return pushed values
+
+OUPUT: Return a new collection object whose length is at least equal to the minium size
+=end
+
+
+# What is the output? (i.e. What should the code return?)
+# What are the steps needed to solve the problem?
+
+
+# 1. Initial Solution
+
+def pad!(array, min_size, value = nil) #destructive
+  if array.length >= min_size || min_size == 0
+    p array
+  elsif array.length < min_size
+    push_obj = min_size - array.length
+    push_obj.times {array.push(value)}
+    p array
+  end
+end
+
+
+def pad(array, min_size, value = nil) #non-destructive
+
+ padded_array = []
+ padded_array = padded_array << array
+
+  if array.length >= min_size || min_size == 0
+    return padded_array.flatten
+  elsif array.length < min_size
+    push_obj = min_size - array.length
+    push_obj.times { padded_array.push(value) }
+    return padded_array.flatten
+  end
+end
+
+
+
+# 3. Refactored Solution
+
+def pad!(array, min_size, value = nil)
+
+  if min_size <= array.length
+     array
+  elsif array.length < min_size
+      num_values_to_add = min_size - array.length
+      num_values_to_add.times { array << value}
+       array
+  end
+
+end
+
+def pad(array, min_size, value = nil)
+  padded_array = []
+  padded_array = padded_array << array
+
+  if min_size <= array.length
+       padded_array.flatten
+  elsif array.length <= min_size
+      num_values_to_add = min_size - array.length
+      num_values_to_add.times { padded_array << value}
+      padded_array.flatten
+  end
+end
+
+
+# 4. Reflection
+
+=begin
+  Were you successful in breaking the problem down into small steps?
+Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+When you refactored, did you find any existing methods in Ruby to clean up your code?
+How readable is your solution? Did you and your pair choose descriptive variable names?
+What is the difference between destructive and non-destructive methods in your own words?
+
+
+=end
+
