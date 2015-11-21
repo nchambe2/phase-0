@@ -62,3 +62,4 @@ describe "pad" do
     expect(pad(empty_array, 2, {})).to eq([{}, {}])
   end
 end
+
