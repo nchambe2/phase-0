@@ -108,11 +108,15 @@ Our initial solution worked, but we did have issues with the padded array method
 
 When we refactored we took out the explicit returns, shortened our conditional statements, and shortened the elsif conditional block by using the while loop.
 
-Our original solution used more fancy Ruby methods then our refactored one. In our first solution we used push and flatten. In our refactored solution we dropped push and subsituted it with <<.
+Our original solution used more fancy Ruby methods then our refactored one. In our first solution we used push and flatten. 
+In our refactored solution we dropped push and subsituted it with <<.
 
-I think our refactored solution is realtively readable. I think we could have refactored it more to get it down to a two line solution. However, I'm not sure how readable that would be.
+I think our refactored solution is realtively readable. 
+I think we could have refactored it more to get it down to a two line solution. 
+However, I'm not sure how readable that would be.
 
-Destructive methods change the original data structure. While non-descructive methods return a new data structure, and leave the original method in tact.
+Destructive methods change the original data structure. 
+While non-descructive methods return a new data structure, and leave the original method in tact.
 
 =end
 
