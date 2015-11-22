@@ -62,11 +62,18 @@ end
 # 4. Reflection
 
 =begin
+Which data structure did you and your pair decide to implement and why?
+Were you more successful breaking this problem down into implementable pseudocode than the last with a pair? 
+What issues/successes did you run into when translating your pseudocode to code?
+What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
+
+Which data structure did you and your pair decide to implement and why?
 We decided to use a hash.
 The data that we were trying to hold: frequency of a value in a collection would be easier to store and access in a hash.
 By using a hash we converted each value in the array into a key.
 Then we assigned the frequency of the key to a value.
 
+Were you more successful breaking this problem down into implementable pseudocode than the last with a pair? What issues/successes did you run into when translating your pseudocode to code?
 From the start we knew that we wanted to convert the array into a Hash.
 So we immediately created a empty hash with a default value.
 We iterated over the array and stored each value as hash.
@@ -83,6 +90,7 @@ We were so busy throwing Ruby methods at it that it didn't occur to us that mayb
 Later on after we had solved the challenge I came back and refactored our pseudo code.
 It helped expose were our issues stemmed from.
 
+What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
 Originally we iteratated over the hash using each.
 While each worked perfectly fine using it made our original solution very verbose.
 For our refacted solution we decided to use select! because we only cared about keeping the key/value pairs with the most frequent values.
