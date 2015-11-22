@@ -99,22 +99,26 @@ end
 # 4. Reflection
 
 =begin
+Were you successful in breaking the problem down into small steps?
 My pair and I were able to successfully break the problem down into small steps.
 We solved the destructive padded array method first.
 Once we did that we realized all we had to do was copy and paste the destructive array method body, and then make small adjustments to get the second method to work.
 
+Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
 A big part of us being able to solve the problem relatively quickly was the fact that our pseudo coding was really fleshed out.
 Our initial solution worked, but we did have issues with the padded array method. We realized that we were changing the original array at first.
 
-When we refactored we took out the explicit returns, shortened our conditional statements, and shortened the elsif conditional block by using the while loop.
-
+Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
 Our original solution used more fancy Ruby methods then our refactored one. In our first solution we used push and flatten. 
 In our refactored solution we dropped push and subsituted it with <<.
 
+When you refactored, did you find any existing methods in Ruby to clean up your code? How readable is your solution? Did you and your pair choose descriptive variable names?
 I think our refactored solution is realtively readable. 
+We took out the explicit returns, shortened our conditional statements, and shortened the elsif conditional block by using the while loop.
 I think we could have refactored it more to get it down to a two line solution. 
 However, I'm not sure how readable that would be.
 
+What is the difference between destructive and non-destructive methods in your own words?
 Destructive methods change the original data structure. 
 While non-descructive methods return a new data structure, and leave the original method in tact.
 
