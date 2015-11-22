@@ -78,29 +78,31 @@ end
 
 # 3. Reflection
 =begin
+What was your process for breaking the problem down? What different approaches did you consider?
 So I really over thought this problem.
 I started out with very vague pseudcode.
 Which meant that I was trying to solve a problem that I didn't fully understand.
 
 So I looked at the specs more,and realized that there was a pattern in terms of comma position and number length.
 
+Was your pseudocode effective in helping you build a successful initial solution?
 When I noticed that I went back and re-pseudocoded my solution.
-
 I broke the problem down into three different conditional expressions.
-
 The first conditional branch was to return the original array if the length of the number was less than 4.
-
 The second conditional branch add one comma to numbers between 4 and 6.
-
 Finally, the last conditional branch added two commas to numbers between 7 and 8.
+
 I find pseudo coding helpful because it helps me determine where my failure points are. 
 If I pseudocode first and can't solve the problem then I know I don't understand it.
 
+How did you initially iterate through the data structure?
 I initally reversed my string, iterated through the reversed string, added a comma(s), pushed the number with a comma into the array, then returned the reversed string.
 
+What new Ruby method(s) did you use when refactoring your solution? Describe your experience of using the Ruby documentation to implement it/them (any difficulties, etc.). Did it/they significantly change the way your code works? If so, how?
 I used the insert method for my refactored solution. I tried to stray away from methods that were to cryptic.
 Instead, choosing one that decreased the length of my code, but didn't sacrifice readability.
 
+Do you feel your refactored solution is more readable than your initial solution? Why?
 I do think that my code is more readable.
 I took out the explicit returns, shortened my conditional statements, and used a built in Ruby method to replace having to reverse my string and iterate through it to place the comma.
 
