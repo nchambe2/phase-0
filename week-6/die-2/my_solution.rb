@@ -75,7 +75,8 @@ The biggest difference was that the initial die class was initialized with the n
 So I used attr_reader to create the sides method.
 Then I used the rand method to randomly select a number from 1 to the max side for the roll method.
 
-This time around the base logic was pretty much the same. I have a die, I roll the die, and then I return the side that it landed on.
+This time around the base logic was pretty much the same.
+I have a die, I roll the die, and then I return the side that it landed on.
 
 The difference was that this die used labels instead of numbers. 
 In order to find the number of sides of the die I had to count how many lables there were vs. just including the instance variable sides in my method.
