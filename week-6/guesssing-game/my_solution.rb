@@ -124,6 +124,9 @@ Why do you think this code requires you to return symbols? What are the benefits
 This particular challenge was trying to demonstrate the hit to performance that strings pose to your program, and that it's not always necessary to use a string.
 In this particular case were just returning correct, high, low, true, or false so using a symbol does not impact readability of your output.
 
-Symbols are immutable and unique. Once a symbol is created they are stored in a symbol table. When your program encounters a symbol it looks it up in memory, and returns it. This is a much faster process than creating a string, having your program find and utilize it, then mark and destroy it.
+Symbols are immutable and unique. 
+Once a symbol is created they are stored in a symbol table. 
+When your program encounters a symbol it looks it up in memory, and returns it.
+This is a much faster process than creating a string, having your program find and utilize it, then mark and destroy it.
 =end
 
