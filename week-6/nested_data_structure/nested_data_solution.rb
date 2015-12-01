@@ -101,8 +101,5 @@ What are some ways you can iterate over nested arrays?
 You can use enumerable methods like map, collect, each.
 
 Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
-In the last two examples they were asking you to iterate through, and make a change to each value within the collection object.
-Since it was a global change I used flatten then iterated through the data structure.
-I don't think that's a solution that you can always apply.
-Depending on what is being asked of you, but I thought this was a great way to do it.
+I made use of the ternary operator. It worked to condense my code down.
 =end
