@@ -79,8 +79,16 @@ startup_names = ["bit",["find", "fast", ["optimize", "scope"]]]
 
 
 #refactored solution
-flat_startup_array = startup_names.flatten
-p flat_startup_array.map { |name| name + "ly"}
+startup_names.map! do |name|
+    if name.kind_of?(Array)
+        name.map do |nested_name|
+            nested_name.kind_of?(Array) ? nested_name.map {|super_nested| super_nested + 'ly'} : nested_name + 'ly'
+        end
+    else
+        name + 'ly'
+    end
+end
+
 
 #Reflection
 =begin
