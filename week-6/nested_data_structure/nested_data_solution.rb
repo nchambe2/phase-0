@@ -54,8 +54,9 @@ number_array = [5, [10, 15], [20,25,30], 35]
 
 
 #refactored solution
-flat_num_array = number_array.flatten
-p flat_num_array.map { |number| number + 5}
+number_array.map! do  |element|
+  element.kind_of?(Array) ? element.map!{|inner| inner += 5} : element += 5
+end
 
 
 # Bonus:
