@@ -6,9 +6,8 @@ array = [[1,2], ["inner", ["eagle", "par", ["FORE", "hook"]]]]
 
 # attempts: 3
 # ============================================================
+array[1][1][2][0]
 
-#p array[1][1][2][0]
-p array.find { |value| p value }# value.eql?("Fore")}
 
 
 # ============================================================
@@ -20,9 +19,8 @@ hash = {outer: {inner: {"almost" => {3 => "congrats!"}}}}
 
 # attempts: 3
 # ============================================================
+hash[:outer][:inner]["almost"][3]
 
-#p hash[:outer][:inner]["almost"][3]
-p hash.find { |value| value.eql?("congrats")}
 # ============================================================
 
 
@@ -34,7 +32,7 @@ nested_data = {array: ["array", {hash: "finished"}]}
 # attempts: 2
 # ============================================================
 
-p nested_data[:array][1][:hash]
+nested_data[:array][1][:hash]
 
 # ============================================================
 
