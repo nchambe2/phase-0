@@ -52,7 +52,6 @@ number_array = [5, [10, 15], [20,25,30], 35]
 
 #p number_array
 
-
 #refactored solution
 number_array.map! do  |element|
   element.kind_of?(Array) ? element.map!{|inner| inner += 5} : element += 5
@@ -63,7 +62,7 @@ end
 
 startup_names = ["bit",["find", "fast", ["optimize", "scope"]]]
 #
-#startup_names.map do |name|
+#startup_names.map! do |name|
 #    if name.kind_of?(Array)
 #      name.map do |nested_name|
 #        if nested_name.kind_of?(Array)
@@ -77,8 +76,8 @@ startup_names = ["bit",["find", "fast", ["optimize", "scope"]]]
 #    end
 #end
 
-
 #refactored solution
+
 startup_names.map! do |name|
     if name.kind_of?(Array)
         name.map do |nested_name|
@@ -88,6 +87,7 @@ startup_names.map! do |name|
         name + 'ly'
     end
 end
+
 
 
 #Reflection
