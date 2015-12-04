@@ -17,8 +17,9 @@ console.log(name)
 
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
-for (var star = "*"; star.length <= 7; star += "*")
+for (var star = "*"; star.length <= 7; star += "*") {
   console.log(star);
+};
 
 function fizzBuzz (number) {
   for (var number = 0; number <= 100; number += 1) {
