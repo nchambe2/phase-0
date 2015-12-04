@@ -12,20 +12,27 @@ name = "Alexandria"
 console.log(name)
 
 //user input
-var favoriteFood = prompt("What is your favorite food?");
-console.log(favoriteFood.toUpperCase().concat("??!?!?!?", " Why that's my favorite food too!"));
+// var favoriteFood = prompt("What is your favorite food?");
+// console.log(favoriteFood.toUpperCase().concat("??!?!?!?", " Why that's my favorite food too!"));
 
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
 for (var star = "*"; star.length <= 7; star += "*")
   console.log(star);
 
-for (var number = 0; number <= 100; number += 1) {
-  if (number % 3 == 0) console.log("Fizz") {
-  } else if {
-    ( number % 5 == 0) console.log("Buzz");
+function fizzBuzz (number) {
+  for (var number = 0; number <= 100; number += 1) {
+      if (number % 3 == 0 && number % 5 == 0) {
+          console.log("FizzBuzz");
+      } else if (number % 3 == 0) {
+          console.log("Fizz");
+      } else if (number % 5 == 0 ) {
+          console.log("Buzz");
+      }
   };
 };
+
+fizzBuzz(10);
 
 
 // Functions
