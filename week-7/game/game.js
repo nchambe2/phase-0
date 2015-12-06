@@ -33,23 +33,30 @@
 
 
 function startGame () {
-    return "Welcome to Guess the First Letter of the word.\nMission: Correctly guess the first letter of the word.\nRules: The computer will randomly select a word.\nIt is your objective to guess what that word starts with.\nIf you guess correctly you win.\nThe amount of tries you have is determined by the length of the word.\nIf you can't successfully guess the correct letter during that period then you lose.";
+    return "Welcome to Guess the First Letter of the word.\nRules: The computer will randomly select a word.\nIt is your objective to guess what that word starts with.\nIf you guess correctly you win.\nThe amount of tries you have is determined by the length of the word.\nIf you can't successfully guess the correct letter during that period then you lose.";
 };
 
 var computer = {
-     word: "wirable",
+     words: ["wirable", "unrocked", "hausen", "platonised", "chantey", "pest", "roven"],
+     wordToGuess: null,
+
+     selectWord: function() {
+        var index = Math.floor(Math.random() * this.words.length);
+        this.wordToGuess = this.words[index];
+        user.numOfGuessesLeft = this.wordToGuess.length;
+     },
      checkUserGuess: function() {
         if (user.numOfGuessesLeft > 0) {
-            if (user.userGuess === this.word.charAt(0)) {
-                return "It's a match! The full word is " + this.word + ".";
+            if (user.userGuess === this.wordToGuess.charAt(0)) {
+                return "It's a match! The full word is " + this.wordToGuess + ".";
             } else {
                 console.log("Not a match");
                 user.numOfGuessesLeft = user.numOfGuessesLeft - 1;
-                console.log("You have " + user.numOfGuessesLeft + " guesses left.")
-                console.log(user.guess());
+                console.log("You have " + user.numOfGuessesLeft + " guesses left.");
+                return user.guess();
             }
         } else {
-              console.log("Sorry I can't accept that guess. Better luck next time.");
+              return "Sorry I can't accept that guess. You are all out of guesses. Better luck next time.";
         }
      }
 };
@@ -57,16 +64,20 @@ var computer = {
 var user = {
    letterArray: "abcdefghijklmnopqrstuvwxyz".split(""),
    userGuess: null,
-   numOfGuessesLeft: computer.word.length,
+   numOfGuessesLeft: null,
 
    guess: function() {
       var index = Math.floor(Math.random() * this.letterArray.length);
-      console.log(this.userGuess = this.letterArray[index]);
-      console.log(computer.checkUserGuess());
+      this.userGuess = this.letterArray[index];
+      console.log("Does the word start with " + this.userGuess + "?");
+      return computer.checkUserGuess();
   }
 
 };
 
 console.log(startGame());
+console.log(computer.selectWord());
+console.log(computer.wordToGuess);
+console.log(user.numOfGuessesLeft);
 console.log(user.guess());
 
