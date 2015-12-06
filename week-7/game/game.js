@@ -39,12 +39,18 @@ function startGame () {
 var computer = {
      word: "wirable",
      checkUserGuess: function() {
-               if (user.userGuess === this.word.charAt(0)) {
-                 return "It's a match! The full word is " + this.word + ".";
-              } else {
-                  console.log("Not a match");
-                  console.log(user.guess());
-              }
+        if (user.numOfGuessesLeft > 0) {
+            if (user.userGuess === this.word.charAt(0)) {
+                return "It's a match! The full word is " + this.word + ".";
+            } else {
+                console.log("Not a match");
+                user.numOfGuessesLeft = user.numOfGuessesLeft - 1;
+                console.log("You have " + user.numOfGuessesLeft + " guesses left.")
+                console.log(user.guess());
+            }
+        } else {
+              console.log("Sorry I can't accept that guess. Better luck next time.");
+        }
      }
 };
 
@@ -62,21 +68,5 @@ var user = {
 };
 
 console.log(startGame());
-console.log(computer.word);
-console.log(user.numOfGuessesLeft);
 console.log(user.guess());
-// console.log(computer.checkUserGuess());
-// console.log(user.guess());
-// console.log(computer.checkUserGuess());
-// console.log(user.guess());
-// console.log(computer.checkUserGuess());
-// console.log(user.guess());
-// console.log(computer.checkUserGuess());
-// console.log(user.guess());
-// console.log(computer.checkUserGuess());
-// console.log(user.guess());
-// console.log(computer.checkUserGuess());
-// console.log(user.guess());
-// console.log(computer.checkUserGuess());
-// console.log(user.guess());
-// console.log(computer.checkUserGuess());
+
