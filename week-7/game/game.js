@@ -42,7 +42,8 @@ var computer = {
                if (user.userGuess === this.word.charAt(0)) {
                  return "It's a match! The full word is " + this.word + ".";
               } else {
-                  return "Not a match";
+                  console.log("Not a match");
+                  console.log(user.guess());
               }
      }
 };
@@ -54,7 +55,8 @@ var user = {
 
    guess: function() {
       var index = Math.floor(Math.random() * this.letterArray.length);
-      return this.userGuess = this.letterArray[index];
+      console.log(this.userGuess = this.letterArray[index]);
+      console.log(computer.checkUserGuess());
   }
 
 };
@@ -63,18 +65,18 @@ console.log(startGame());
 console.log(computer.word);
 console.log(user.numOfGuessesLeft);
 console.log(user.guess());
-console.log(computer.checkUserGuess());
-console.log(user.guess());
-console.log(computer.checkUserGuess());
-console.log(user.guess());
-console.log(computer.checkUserGuess());
-console.log(user.guess());
-console.log(computer.checkUserGuess());
-console.log(user.guess());
-console.log(computer.checkUserGuess());
-console.log(user.guess());
-console.log(computer.checkUserGuess());
-console.log(user.guess());
-console.log(computer.checkUserGuess());
-console.log(user.guess());
-console.log(computer.checkUserGuess());
+// console.log(computer.checkUserGuess());
+// console.log(user.guess());
+// console.log(computer.checkUserGuess());
+// console.log(user.guess());
+// console.log(computer.checkUserGuess());
+// console.log(user.guess());
+// console.log(computer.checkUserGuess());
+// console.log(user.guess());
+// console.log(computer.checkUserGuess());
+// console.log(user.guess());
+// console.log(computer.checkUserGuess());
+// console.log(user.guess());
+// console.log(computer.checkUserGuess());
+// console.log(user.guess());
+// console.log(computer.checkUserGuess());
