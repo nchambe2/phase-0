@@ -9,16 +9,21 @@ I worked on this challenge with: .
 // Pseudocode
 INPUT: Number
 STEPS:
-Convert number to string
-Store that conversion in a variable called stringToNum
-Find the last index of the string by
-  finding the length
+Convert the number into string 
+Split at each character and store in an array
+Store the in a container object 
+Find the last index of the string(length - 1)
+Store that number in a container object 
+Iterate through the string array 
+IF the length of the string is < 4 THEN
+    return the stringArry as a string 
+IF the length of the string is > 4 THEN 
+    create a variable and set it equal to 3 
+    for every 3rd position add a comma
+END IF 
+
+Return string with commas 
 OUTPUT: Number converted to string. Commas should appear starting with the last number every 3 places.
-def seperate comma function which will take a integer as a argument
-transform to a string
-count from last number
-use a for loop to insert comma at every three numbers
-should only include corrent number of commas
 
 
  */
