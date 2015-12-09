@@ -17,41 +17,65 @@ var scores = [ [80, 70, 70, 100],
 
 // __________________________________________
 // Write your code below.
+// var gradebook = {
+//   Joseph: {testScores: scores[0]},
+//   Susan: {testScores: scores[1]},
+//   William: {testScores: scores[2]},
+//   Elizabeth: {testScores: scores[3]},
+//   addScore : function(name, score){
+//                  gradebook[name].testScores.push(score);
+//              },
+//   getAverage : function(name) {
+//                 return average(gradebook[name].testScores);
+//                },
+// };
+
+// function average(arr) {
+//       var sum = arr.reduce(
+//           function(total, num){
+//             return total + num;
+//           } , 0);
+
+//       return (sum / arr.length);
+// };
+
+// __________________________________________
+// Refactored Solution
+
 var gradebook = {
   Joseph: {testScores: scores[0]},
   Susan: {testScores: scores[1]},
   William: {testScores: scores[2]},
   Elizabeth: {testScores: scores[3]},
   addScore : function(name, score){
-                 gradebook[name].testScores.push(score);
-             },
+                 this[name].testScores.push(score);
+  },
   getAverage : function(name) {
-                return average(gradebook[name].testScores);
-               },
+                return average(this[name].testScores);
+  },
 };
 
 function average(arr) {
-      var sum = arr.reduce(
-          function(total, num){
+      var sum = arr.reduce(function(total, num){
             return total + num;
-          } , 0);
+      });
 
       return (sum / arr.length);
 };
 
 // __________________________________________
-// Refactored Solution
-
-
-
-
-
-
-
-
-// __________________________________________
 // Reflect
+// What did you learn about adding functions to objects?
+// I learned about the usage of the keyword this.
+// We used the this keyword before in one of the challenges last week.
+// However, I didn't really understand why we had to use it.
+// However, when refactoring it became clear that I could substitute the object name for the this keyword.
 
+// How did you iterate over nested arrays in JavaScript?
+// We used the reduce function.
+
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+// My pair introduced me to reduce. I wasn't familiar with it before this challenge.
 
 
 
