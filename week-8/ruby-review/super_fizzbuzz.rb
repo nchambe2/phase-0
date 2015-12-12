@@ -43,9 +43,9 @@ def super_fizzbuzz(array)
         divisible_by_five = num.modulo(5) == 0
         divisible_by_fifteen = num.modulo(15) == 0
         case
-           when (divisible_by_fifteen && divisible_by_three && divisible_by_fifteen) then "FizzBuzz"
-           when (divisible_by_three) then "Fizz"
-           when (divisible_by_five) then "Buzz"
+           when divisible_by_fifteen then "FizzBuzz"
+           when divisible_by_three then "Fizz"
+           when divisible_by_five then "Buzz"
            else num
         end
     end
