@@ -48,17 +48,17 @@ SELECT region_name FROM regions WHERE region_name LIKE '%Central%';
 SELECT Regions.region_name, States.state_name FROM STATES INNER JOIN Regions ON States.region_id=Regions.id ORDER BY region_id;
 ```
 #Schema Design for closet database
-![Closet database](/schema_design.png)
+![Closet database](schema_design.png)
 
 #Reflection:
-What are databases for?
+**What are databases for?**
 Databases are used to store data. You can then access, alter or delete that data via a special language called SQL.
 
-What is a one-to-many relationship?
+**What is a one-to-many relationship?**
 It models the relationship of one piece of information from one table having many of another piece of data from a different table.
 
-What is a primary key? What is a foreign key? How can you determine which is which?
+**What is a primary key? What is a foreign key? How can you determine which is which?**
 A primary key is a unique identifier in a table. While a foreign key maps to the the primary key in another table. It's used to create associations between tables.
 
-How can you select information out of a SQL database? What are some general guidelines for that?
+**How can you select information out of a SQL database? What are some general guidelines for that?**
 If you want to select information out of a SQL database you have to use the keyword select. If you want to select all the information from each column in a database you can use the wildcard operator(*) to select all the column names. If you want to select just certain columns you just write out each column name and seperate each column name with a comma. If you join two tables together then you need to specify the table name followed by a dot then the column name.
