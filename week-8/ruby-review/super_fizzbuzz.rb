@@ -51,9 +51,17 @@ def super_fizzbuzz(array)
     end
 end
 
-
-
-
-
-
 # Reflection
+=begin
+What concepts did you review or learn in this challenge?
+I reviewed using case statements.
+Previously, I had only used when and then while utilizing case statements
+I had never used else statements though.
+So I had to look up was that allowable, then figured out how to use it.
+Also, having methods call other methods.
+What is still confusing to you about Ruby?
+In this situation I was unsure if I need to add attr_reader to my class.
+Might have to go to office hours to clarify.
+What are you going to study to get more prepared for Phase 1?
+Hashes, enumerable/enumerators, and working on some extra algorithm problems.
+=end
