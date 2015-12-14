@@ -22,16 +22,14 @@ return reversed word
 
 def reverse_words(words)
   word_array = words.split(" ")
-  word_array.map! { |word| word.reverse}
-  word_array.join(" ")
+  word_array.map! { |word| word.reverse}.join(" ")
 end
 
 
 # Refactored Solution
 
 def reverse_words(words)
-  word_array = words.split(" ")
-  word_array.map! { |word| word.reverse}.join(" ")
+  words.split(" ").map { |word| word.reverse}.join(" ")
 end
 
 
