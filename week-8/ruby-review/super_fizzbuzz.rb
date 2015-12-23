@@ -39,9 +39,9 @@ end
 
 def super_fizzbuzz(array)
     array.map! do |num|
-        divisible_by_three = num.modulo(3) == 0
-        divisible_by_five = num.modulo(5) == 0
-        divisible_by_fifteen = num.modulo(15) == 0
+        divisible_by_three = num.modulo(3).eql? 0
+        divisible_by_five = num.modulo(5).eql? 0
+        divisible_by_fifteen = num.modulo(15).eql? 0
         case
            when divisible_by_fifteen then "FizzBuzz"
            when divisible_by_three then "Fizz"
